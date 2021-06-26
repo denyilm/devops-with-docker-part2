@@ -1,0 +1,9 @@
+version: '3.5'
+
+services: 
+    browser-test:
+        image: devopsdockeruh/simple-web-service
+        command: ["server"]
+        ports:
+            - 8080:8080
+        
