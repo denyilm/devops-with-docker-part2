@@ -1,3 +1,5 @@
+#I was getting CORS policy error so I have changed thge REQUEST_ORIGIN environment variable to http://localhost
+#It was http://localhost:5000
 version: '3.5'
 
 services:
@@ -11,6 +13,7 @@ services:
 
     backend: 
         image: be-example
+        #change
         environment: 
             - REQUEST_ORIGIN=http://localhost
             - REDIS_HOST=redis
